@@ -37,7 +37,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: site-content
-          path: dist
+          path: ./dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
