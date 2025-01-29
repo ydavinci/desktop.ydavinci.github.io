@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm install
       - name: Build the site
@@ -24,7 +26,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: site-content
-          path: ./dist
+          path: dist
+      - name: List files in the dist folder
+        run: ls -l dist
 
   deploy:
     needs: build
