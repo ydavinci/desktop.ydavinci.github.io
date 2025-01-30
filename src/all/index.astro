@@ -5,6 +5,15 @@
 	import { initGlowEffect } from '../components/glow.js';
 	document.addEventListener('DOMContentLoaded', initGlowEffect);
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+    if (isMobile) {
+      alert("Warning: The mobile version of this site is not finished yet. Please view this site on a desktop or laptop for the best experience.");
+    }
+  });
+</script>
+
 <style>
 	.bg-16024d {
     background: rgb(83,25,238);
