@@ -1,19 +1,8 @@
 ---
 
 ---
-<script>
-	import { initGlowEffect } from '../components/glow.js';
-	document.addEventListener('DOMContentLoaded', initGlowEffect);
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
-    if (isMobile) {
-      alert("Warning: The mobile version of this site is not finished yet. Please view this site on a desktop or laptop for the best experience.");
-    }
-  });
-</script>
 
+<script src="/redirect.js" is:inline></script>
 <style>
 	.bg-16024d {
     background: rgb(83,25,238);
@@ -126,7 +115,10 @@
       
     </section>
     <section class="space-y-4 flex flex-col h-screen w-screen">
-      <div class="flex basis-1/3"></div>
+      <div class="flex basis-1/3 text-wrap">
+        <h2 class="items-start justify-center flex">About Me</h2>
+        <p class="font-inter items-center flex text-center ">I'm a student from Germany passionate about crafting creative designs, code and creating solutions for problems I encounter in my everyday life. Currently, I am a student at a secondary level school in Germany, spending my free time with physical activities, coding, reading fictional and non-fiction books or going on dates with my girlfriend. In the past, I have had the opportunity to work on multiple private projects, including a website, a plugin for the game Minecraft and and cooperations with Community Managers, including NVIDIA GeForce Now.</p>
+      </div>
       <div class="flex basis-1/3 items-start justify-center">
         <p class="text-5xl font-bold font-inter">If you wish to contact me, you can do this by<a href="mailto:david@free3.org"> clicking here.</a></p>
       </div>
